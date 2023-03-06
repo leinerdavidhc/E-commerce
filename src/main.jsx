@@ -1,10 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import {TagContexto} from './context/ContextoE'
 import './index.css'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-   <h1>hola</h1>
+    <TagContexto>
+      <h1>1</h1>
+    </TagContexto>
   </React.StrictMode>,
 )
