@@ -8,7 +8,11 @@ import VistaProductos from "./pages/ProductosVista";
 
 const App=()=>{
     return(
-       <Inicio/>
+        <BrowserRouter>
+            <Routes>
+                <Route index path="/" element={<Inicio/>}/>
+            </Routes>
+        </BrowserRouter>
     );
 }
 
