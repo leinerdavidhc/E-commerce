@@ -7,7 +7,7 @@ import './index.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <TagContexto>
-      <h1>1</h1>
+      <div className='bg-red-400 h-24 w-24'>v2</div>
     </TagContexto>
   </React.StrictMode>,
 )
