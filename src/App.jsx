@@ -11,6 +11,10 @@ const App=()=>{
         <BrowserRouter>
             <Routes>
                 <Route index path="/" element={<Inicio/>}/>
+                <Route path="/Nosotros" element={<Nosotros/>}/>
+                <Route path="/Contactenos" element={<Contáctenos/>}/>
+                <Route path="/Productos" element={<Productos/>}/>
+                <Route path="/VistaProductos" element={<VistaProductos/>}/>
             </Routes>
         </BrowserRouter>
     );
