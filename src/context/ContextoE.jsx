@@ -33,15 +33,15 @@ export function TagContexto(props) {
   }
 
   const scroll = () => {
-    var nav = document.querySelector("Nav");
-    var navOffset = nav.offsetTop;
-    window.onscroll = () => {
-      if (window.pageYOffset > navOffset) {
-        nav.classList.add("fixed");
-      } else {
-        nav.classList.remove("fixed");
-      }
-    };
+    // var nav = document.querySelector("Nav");
+    // var navOffset = nav.offsetTop;
+    // window.onscroll = () => {
+    //   if (window.pageYOffset > navOffset) {
+    //     nav.classList.add("fixed");
+    //   } else {
+    //     nav.classList.remove("fixed");
+    //   }
+    // };
   };
   useEffect(() => {
     setDato(Categorias);
