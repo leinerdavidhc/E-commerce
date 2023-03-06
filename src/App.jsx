@@ -10,11 +10,11 @@ const App=()=>{
     return(
         <BrowserRouter>
             <Routes>
-                <Route index path="/" element={<Inicio/>}/>
-                <Route path="/Nosotros" element={<Nosotros/>}/>
-                <Route path="/Contactenos" element={<Contáctenos/>}/>
-                <Route path="/Productos" element={<Productos/>}/>
-                <Route path="/VistaProductos" element={<VistaProductos/>}/>
+                <Route index path="/E-commerce/" element={<Inicio/>}/>
+                <Route path="/E-commerce/Nosotros" element={<Nosotros/>}/>
+                <Route path="/E-commerce/ontactenos" element={<Contáctenos/>}/>
+                <Route path="/E-commerce/Productos" element={<Productos/>}/>
+                <Route path="/E-commerce/VistaProductos" element={<VistaProductos/>}/>
             </Routes>
         </BrowserRouter>
     );
