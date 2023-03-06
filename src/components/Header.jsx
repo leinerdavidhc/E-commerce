@@ -20,7 +20,7 @@ function Header() {
       <div className="Nav-ContactosInfo w-full bg-gray-100 p-2 px-24 flex justify-around items-center">
         <Link to="/E-commerce/">
         <img
-          src="/src/img/Logo.jpg"
+          src="/E-commerce/src/img/Logo.jpg"
           alt="Logo"
           className="Logo w-28 rounded-full cursor-pointer"
         />
