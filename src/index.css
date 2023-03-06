@@ -1,0 +1,412 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Contenedor de la pagina sera grid y tendra dentro a header, main, aside , footer*/
+.Contenedor{
+  height: 100%;
+  width: 100%;
+  grid-template-rows: max-content minmax(400px,600px) 1fr 400px max-content;
+  grid-template-areas: 
+  "Header Header Header"
+  "Cabecera Cabecera Cabecera"
+  "Main Main Main"
+  "Aside Aside Aside"
+  "Footer Footer Footer";
+  background-color: #fafdff;
+}
+
+/*Header de la pagina*/
+.Header{
+  grid-area: Header;
+  font-family: 'Oswald', sans-serif;
+}
+
+/*Header de la pagina*/
+.HeaderR{
+  grid-area: Header;
+  font-family: 'Oswald', sans-serif;
+  transition: all .6s;
+}
+
+.burger-bar.clicked:nth-child(1){
+  transform: rotate(45deg) translate(0.70em,0.2em);
+  transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(2){
+  transform: scale(0.1);
+  transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(3){
+  transform: rotate(135deg) translate(-0.5em,0);
+  transition: ease-out 0.5s;
+}
+
+.burger-bar.noclicked{
+  transform: rotate(0) translate(0);
+  transition: cubic-bezier(0.175,0.885,0.32,1.275) 0.5s;
+}
+
+/*nav de informacion horario de atencion y otr informacion relevate*/
+.Nav{
+  background-color:#fafdff;
+  z-index: 999;
+  top: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Header .Nav-Info{
+  background-color: #efb810;
+  color:#fafdff;
+}
+
+/*item de informacion de conectos y lugar fisico*/
+.Li-Contacto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  flex: 1;
+  border-right:1px solid #ccc;
+}
+
+.Li-Contacto:nth-child(3){
+  border: none;
+}
+
+.Li-Contacto i{
+  color: #efb810;
+  font-size: 20px;
+}
+.shopping{
+  color: #181818;
+  font-size: 24px;
+  height: 40px;
+  width: 40px;
+}
+.shopping:hover{
+  color: #efb810;
+}
+
+.Li-Contacto h2{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.Li-Contacto span{
+  color: #aaa;
+}
+.navR{
+  background-color: #fafdff;
+  padding: 10px;
+}
+.navR ul{
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.navR ul li{
+  color: #181818;
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  border-bottom:1px solid #ccc;
+}
+.navR ul li ul li{
+  border-bottom:1px solid #efb810;
+}
+
+
+/*Nav donde estara los enlaces y el buscador*/
+.navUl{
+  font-family:Helvetica,Arial, sans-serif;
+}
+.navUl .item{
+  color: #181818da;
+}
+.navUl .activo{
+  color: #efb810;
+}
+.navUl li{
+  color: #181818da;
+}
+
+.navUl .Enlaces:hover .item{
+  color: #efb810;
+}
+.dropdown-menu{
+  display: none;
+}
+.producto:hover .dropdown-menu{
+  display: block;
+}
+
+.dropItem{
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+.dropItem:hover{
+  color: #efb810;
+}
+.inputSearch{
+  background-color: #eee;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  outline: 1px solid #ccc;
+}
+.inputSearch input{
+  width: 100%;
+  height: 100%;
+  background-color: #fafdff;
+  padding: 10px;
+  outline: none;
+  color: #1818189c;
+}
+.inputSearch:focus-within{
+  outline: 1px solid #efb810;
+}
+.inputSearch i{
+  padding: 10px;
+  font-size: 15px;
+  color: #efb810;
+  cursor: pointer;
+  height: 100%;
+  transition: .2s;
+}
+.fa-magnifying-glass:hover{
+  background-color: #ddd;
+}
+
+/*Encabezado imgaen con informacion del sitio*/
+
+.Cabecera{
+  grid-area: Cabecera;
+  background-image: url('https://images.pexels.com/photos/5018590/pexels-photo-5018590.jpeg?auto=compress&cs=tinysrgb&w=600');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fafdff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.Cabecera h1{
+  color: #efb810;
+  text-shadow: 2px 3px 2px #181818;
+}
+.Cabecera p{
+  text-shadow: 2px 2px 1px #181818;
+}
+
+.Cabecera button{
+  background-color: #181818;
+  padding: 10px;
+  border-radius: 6px;
+  transition: .5s;
+}
+
+.Cabecera button:hover{
+  background-color: #efb810;
+  color: #181818;
+}
+
+/*Main parte principal de la pagina*/
+
+.Main{
+  grid-area: Main;
+  padding-top: 1px;
+}
+.Productos,.Nosotros,.Conctacto{
+  height:300px;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:flex-start;
+  gap: 20px;
+  font-family: 'Oswald', sans-serif;
+
+}
+.Productos h4,.Nosotros h4,.Conctacto h4{
+  color: #fafdff;
+  font-size: 20px;
+}
+
+.Productos h2,.Nosotros h2,.Conctacto h2{
+  color: #fafdff;
+  font-size: 32px;
+  text-shadow: 2px 2px 1px #181818;
+}
+
+.Productos p,.Nosotros p,.Conctacto p{
+  color: #fafdff;
+  font-size: 15px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Productos button,.Nosotros button,.Conctacto button{
+  background-color: #181818;
+  color: #fafdff;
+  padding: 10px;
+  width: 150px;
+  border-radius: 5px;
+  transition: .5s;
+}
+.Productos button:hover,.Nosotros button:hover,.Conctacto button:hover{
+  background-color: #efb810;
+  color: #181818;
+}
+
+.Productos{
+  background-color:#5f4c31;
+}
+
+.Productos:hover{
+  background-color:#382d1e;
+}
+.bannerProductosD a{
+  display: block;
+  transition: all .5s;
+}
+.bannerProductosD{
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+}
+
+/*bannerProductosD*/
+
+.bannerProductosD img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.bannerProductosD a:hover{
+  transform: scale(1.2);
+}
+
+
+/*Aisde de la pagina*/
+
+.Aside{
+  grid-area: Aside;
+  background-image: url('https://images.pexels.com/photos/1078884/pexels-photo-1078884.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*Footer*/
+
+.Footer{
+  grid-area: Footer;
+}
+
+.Footer h2{
+  color: #fafdff;
+  font-family: 'Oswald', sans-serif;
+  width: max-content;
+  padding: 20px;
+  border-bottom:2px solid #efb810;
+}
+.Footer ul{
+  display: flex;
+  flex-direction: column;
+}
+.Footer a{
+  color: #eee;
+  font-size:14px;
+  transition: all .5s;
+}
+
+.Footer a:hover{
+  color: #efb810;
+}
+
+.Contáctenos{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Contáctenos p,.Contáctenos span{
+  color: #eee;
+}
+.Contáctenos i{
+  color: #efb810;
+}
+
+
+
+
+/*
+  MODAL CARRITO
+*/
+
+.modalCarrito{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.ContenedorModalCarrito{
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #0000004d;
+}
+
+.close{
+  justify-self: flex-end;
+}
+
+.encabezadoModalCarrito{
+  background-color: #efb810;
+  padding: 20px;
+  font-weight: 600;
+  color: #fafdff;
+}
+
+.encabezadoModalCarrito .item{
+  display: flex;
+  gap: 20px;
+}
+
+.inputNumber .Min,.inputNumber .Max{
+  background-color: #eee;
+  width:30px;
+  height: 29px;
+  border: 1px solid #bbb;
+  text-align: center;
+  font-size: 18px;
+  
+}
+.inputNumber input{
+  width: 30px;
+  height: 29px;
+  border-bottom: 1px solid #bbb;
+  border-top: 1px solid #bbb;
+  text-align: center;
+  font-size: 18px;
+}

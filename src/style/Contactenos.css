@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Contenedor de la pagina sera grid y tendra dentro a header, main, aside , footer*/
+.ContenedorContactenos {
+  height: 100%;
+  width: 100%;
+  grid-template-rows: max-content minmax(400px, 600px) 1fr 400px max-content;
+  grid-template-areas:
+    "Header Header Header"
+    "Cabecera Cabecera Cabecera"
+    "Main Main Main"
+    "Aside Aside Aside"
+    "Footer Footer Footer";
+  background-color: #fafdff;
+}
+
+/*Cabecera*/
+.CabeceraContactenos {
+    grid-area: Cabecera;
+    background-image: url("https://images.pexels.com/photos/13162091/pexels-photo-13162091.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fafdff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    font-family: "Oswald", sans-serif;
+  }
+  .CabeceraContactenos h2 {
+    text-shadow: 2px 2px 1px #181818;
+  }
+  .CabeceraContactenos h1 {
+    color: #efb810;
+    font-weight: bold;
+    text-shadow: 2px 3px 2px #181818;
+  }
+
+/*Main*/
+.MainContactenos {
+    grid-area: Main;
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Formulario{
+    grid-template-columns: repeat(2,auto);
+    gap: 20px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Formulario input[type="text"],.Formulario input[type="email"]{
+    outline: 1px solid #bbb;
+    padding: 10px;
+    border-radius: 6px;
+    color:#181818b4;
+    font-size: 14px;
+}
+
+.Formulario input[type="text"]:active,.Formulario input[type="text"]:focus,
+.Formulario input[type="email"]:active,.Formulario input[type="email"]:focus{
+    outline: 2px solid #efb810;
+}
+
+.Formulario input[type="text"]:hover,
+.Formulario input[type="email"]:hover{
+    outline: 2px solid #efb810;
+}
+
+.Formulario textarea{
+    resize: none;
+    grid-column: span 2 /span 2;
+    outline: 1px solid #bbb;
+    padding: 10px;
+    color:#181818b4;
+    font-size: 14px;
+    max-height: 150px;
+    border-radius: 6px;
+}
+
+.Formulario textarea:hover,
+.Formulario textarea:focus,
+.Formulario textarea:active
+{
+    outline: 2px solid #efb810;
+}
+
+
+
+.Formulario input[type="submit"]{
+    background-color: #efb810;
+    color: #181818;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    max-width:150px;
+    border-radius: 4px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.Formulario input[type="submit"]:hover{
+    background-color: #181818;
+    color: #efb810;
+}
+.MainContactenos .bannerConactos{
+    background-color: #dddddd8a;
+}
+.MainContactenos .bannerConactos .itemInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MainContactenos .bannerConactos .itemInfo i{
+    color: #efb810;
+    font-size: 46px;
+}
+
+.MainContactenos .bannerConactos .itemInfo h2{
+    color: #181818;
+    font-size: 26px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+}
+
+.MainContactenos .bannerConactos .itemInfo span{
+    color: #858585;
+}
+
+/*Aside*/
+.slider{
+    grid-area: Aside;
+    background-color: #efb810;
+    color: #efb810;
+    transition: all .5s;
+    font-family: "Oswald", sans-serif;
+    scrollbar-width: 10px;
+    scrollbar-color: red;
+    width:100%;
+
+}
+
+.slider:hover{
+    background-color: #181818;
+    color: #181818;
+}
+.itemSlider{
+    background-color: #181818;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    scroll-behavior: smooth;
+}
+
+.slider:hover .itemSlider{
+    background-color: #efb810;
+}
