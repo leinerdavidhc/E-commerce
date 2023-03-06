@@ -8,15 +8,7 @@ import VistaProductos from "./pages/ProductosVista";
 
 const App=()=>{
     return(
-        <BrowserRouter>
-            <Routes>
-                <Route index path="/" element={<Inicio/>}/>
-                <Route path="/Nosotros" element={<Nosotros/>}/>
-                <Route path="/Contactenos" element={<Contáctenos/>}/>
-                <Route path="/Productos" element={<Productos/>}/>
-                <Route path="/VistaProductos" element={<VistaProductos/>}/>
-            </Routes>
-        </BrowserRouter>
+        <div className='bg-red-400 h-24 w-24'>v2</div>
     );
 }
 
