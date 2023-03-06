@@ -8,7 +8,9 @@ import VistaProductos from "./pages/ProductosVista";
 
 const App=()=>{
     return(
-        <div className='bg-red-400 h-24 w-24'>v2</div>
+        <BrowserRouter>
+                <Route index path="/" element={<Inicio/>}/>
+        </BrowserRouter>
     );
 }
 
