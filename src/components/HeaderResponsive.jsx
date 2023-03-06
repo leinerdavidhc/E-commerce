@@ -48,7 +48,7 @@ function HeaderR() {
       <div className="HeaderR-Encabezado flex items-center justify-between w-full p-2.5 gap-2">
         <Link to="/E-commerce/">
           <img
-            src="/E-commerce/src/img/Logo.jpg"
+            src="/E-commerce/assets/Logo-0a60b9e7.jpg"
             alt="Logo"
             className="Logo w-16 rounded-full cursor-pointer"
           />

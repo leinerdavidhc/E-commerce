@@ -8,7 +8,7 @@ function Footer() {
         <div className="ContenedorNostros text-gray-300 flex flex-col gap-4 justify-center md:items-center">
           <Link to={"/"}>
           <img
-            src="/E-commerce/src/img/Logo.jpg"
+            src="/E-commerce/assets/Logo-0a60b9e7.jpg"
             alt="Logo"
             className="Logo w-28 rounded-full"
           />
