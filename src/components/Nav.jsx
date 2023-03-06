@@ -10,22 +10,22 @@ function Nav() {
     <nav className="Nav w-full p-4 flex  items-center justify-between lg:px-32 md:px-20 gap-10">
       <ul className="navUl flex gap-4  relative">
         <li className="Enlaces">
-          <Link className="item activo" to="/">
+          <Link className="item activo" to="/E-commerce/">
             Inicio
           </Link>
         </li>
         <li className="Enlaces">
-          <Link className="item" to="/Nosotros">
+          <Link className="item" to="/E-commerce/Nosotros">
             Nosotros
           </Link>
         </li>
         <li className="Enlaces producto">
-          <Link className="item" to={"/Productos"}>Productos </Link>
+          <Link className="item" to={"/E-commerce/Productos"}>Productos </Link>
           <i className="fa-solid fa-chevron-down"></i>
           <DropdownMenu />
         </li>
         <li className="Enlaces">
-          <Link className="item" to="/Contactenos">
+          <Link className="item" to="/E-commerce/Contactenos">
             Contáctenos
           </Link>
         </li>

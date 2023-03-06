@@ -18,7 +18,7 @@ function ModalCard({InfoModal,onclose}){
                 <div className="acionesModal bg-white flex flex-col justify-start p-2 gap-2">
                     <button className="bg-emerald-500 hover:bg-emerald-400 text-white font-medium rounded h-12"
                     onClick={()=>{CrearCarrito(InfoModal);alert("Producto Agregado"); onclose()}}>Agregar al Carrito</button>
-                    <Link to={"/Contactenos"}><button className="bg-blue-600 text-white w-full rounded h-12 hover:bg-blue-500">Contactar</button></Link>
+                    <Link to={"/E-commerce/Contactenos"}><button className="bg-blue-600 text-white w-full rounded h-12 hover:bg-blue-500">Contactar</button></Link>
                 </div>
             </div>
         </div>

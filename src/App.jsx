@@ -12,7 +12,7 @@ const App=()=>{
             <Routes>
                 <Route index path="/E-commerce/" element={<Inicio/>}/>
                 <Route path="/E-commerce/Nosotros" element={<Nosotros/>}/>
-                <Route path="/E-commerce/ontactenos" element={<Contáctenos/>}/>
+                <Route path="/E-commerce/Contactenos" element={<Contáctenos/>}/>
                 <Route path="/E-commerce/Productos" element={<Productos/>}/>
                 <Route path="/E-commerce/VistaProductos" element={<VistaProductos/>}/>
             </Routes>

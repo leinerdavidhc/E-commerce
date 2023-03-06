@@ -8,7 +8,7 @@ function DropdownMenu() {
     <ul className="dropdown-menu absolute top-6 bg-gray-100">
       {dato.map((Categorias) => (
         <li className="px-2 py-1 dropItem" key={Categorias.id}>
-          <Link className="enlaces" to="/VistaProductos" onClick={()=>{setCategoriaId(Categorias.id)}}>
+          <Link className="enlaces" to="/E-commerce/VistaProductos" onClick={()=>{setCategoriaId(Categorias.id)}}>
             {Categorias.nombreCategoria}
           </Link>
         </li>

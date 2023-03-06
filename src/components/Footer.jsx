@@ -32,10 +32,10 @@ function Footer() {
         <div className="Enlaces flex flex-col md:items-center justify-around">
             <h2 className="text-xl md:text-2xl">Enlaces</h2>
             <ul className="conctnedorEnlaces">
-                <li><Link to={"/"}>Inicio</Link></li>
-                <li><Link to={"/Nosotros"}>Nosotros</Link></li>
-                <li><Link to={"/Productos"}>Productos</Link></li>
-                <li><Link to={"/Contactenos"}>Conctáctenos</Link></li>
+                <li><Link to={"/E-commerce/"}>Inicio</Link></li>
+                <li><Link to={"/E-commerce/Nosotros"}>Nosotros</Link></li>
+                <li><Link to={"/E-commerce/Productos"}>Productos</Link></li>
+                <li><Link to={"/E-commerce/Contactenos"}>Conctáctenos</Link></li>
             </ul>
         </div>
 

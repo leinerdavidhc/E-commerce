@@ -42,10 +42,10 @@ function Carrito() {
             </div>
             <div className="footerCarrito flex justify-between p-5 items-center bg-gray-200 border-t-2 border-gray-300 gap-2.5">
                <div className="footerModalCBnt flex md:gap-5 gap-2.5">
-               <Link to={"/Productos"}><button className="bg-emerald-500 hover:bg-emerald-600 duration-500 md:p-2.5 p-2 w-max text-white hover:text-gray-100 font-semibold rounded"  onClick={() => {
+               <Link to={"/E-commerce/Productos"}><button className="bg-emerald-500 hover:bg-emerald-600 duration-500 md:p-2.5 p-2 w-max text-white hover:text-gray-100 font-semibold rounded"  onClick={() => {
                   Carrito();
                 }}>Mas Productos</button></Link>
-                <Link to="/Contactenos" onClick={()=>{Carrito()}} className="bg-blue-700 hover:bg-blue-800 duration-500 text-white  hover:text-gray-100 w-max font-semibold md:p-2.5 p-2 text-center rounded">Mas Informacion</Link>
+                <Link to="/E-commerce/Contactenos" onClick={()=>{Carrito()}} className="bg-blue-700 hover:bg-blue-800 duration-500 text-white  hover:text-gray-100 w-max font-semibold md:p-2.5 p-2 text-center rounded">Mas Informacion</Link>
                </div>
                <h3 className="text-neutral-800 font-semibold text-xl">Total: $200,000</h3>
             </div>

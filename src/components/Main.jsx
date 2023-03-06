@@ -17,7 +17,7 @@ function Main() {
             quod deleniti deserunt id odit, illo doloremque sequi possimus ipsam
             mollitia maiores?
           </p>
-          <Link to={"/Productos"}><button>Ver Más</button></Link>
+          <Link to={"/E-commerce/Productos"}><button>Ver Más</button></Link>
         </div>
 
         <div className="Nosotros bg-blue-600 hover:bg-blue-900 duration-500">
@@ -31,7 +31,7 @@ function Main() {
             quod deleniti deserunt id odit, illo doloremque sequi possimus ipsam
             mollitia maiores?
           </p>
-          <Link to={"/Nosotros"}><button>Ver Más</button></Link>
+          <Link to={"/E-commerce/Nosotros"}><button>Ver Más</button></Link>
         </div>
 
         <div className="Conctacto bg-emerald-500 hover:bg-emerald-800 duration-500">
@@ -45,7 +45,7 @@ function Main() {
             quod deleniti deserunt id odit, illo doloremque sequi possimus ipsam
             mollitia maiores?
           </p>
-          <Link to={"/Contactenos"}><button>Ver Más</button></Link>
+          <Link to={"/E-commerce/Contactenos"}><button>Ver Más</button></Link>
         </div>
       </div>
       <BannerProducto/>

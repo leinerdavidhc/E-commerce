@@ -24,7 +24,7 @@ function BannerProducto() {
             consequuntur?
           </p>
         </div>
-        <Link to={"/Productos"}><button className="bg-yellow-400 text-zinc-800 w-max p-2.5 rounded hover:bg-yellow-500 text-lg font-semibold ">
+        <Link to={"/E-commerce/Productos"}><button className="bg-yellow-400 text-zinc-800 w-max p-2.5 rounded hover:bg-yellow-500 text-lg font-semibold ">
           Ver Productos
         </button></Link>
       </div>

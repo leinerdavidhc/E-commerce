@@ -9,7 +9,7 @@ function Aside(){
             <p className="md:w-2/4 text-center">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fuga voluptatem repellat assumenda modi suscipit culpa dolorum hic dignissimos, ex nesciunt laborum, impedit cum pariatur? Iusto aliquid minus molestiae dignissimos?
                 </p>
-           <Link to={"/Contactenos"}><button className="bg-yellow-400 text-zinc-800 w-max p-2.5 rounded hover:bg-yellow-500 text-lg font-semibold">Mas Informacion</button></Link>
+           <Link to={"/E-commerce/Contactenos"}><button className="bg-yellow-400 text-zinc-800 w-max p-2.5 rounded hover:bg-yellow-500 text-lg font-semibold">Mas Informacion</button></Link>
         </aside>
     );
 }

@@ -46,7 +46,7 @@ function HeaderR() {
     /*header donde esta toda la informacion de la pagina*/
     <header className={header}>
       <div className="HeaderR-Encabezado flex items-center justify-between w-full p-2.5 gap-2">
-        <Link to="/">
+        <Link to="/E-commerce/">
           <img
             src="/src/img/Logo.jpg"
             alt="Logo"
@@ -74,18 +74,18 @@ function HeaderR() {
       <nav className="navR">
         <ul className="navRUl flex">
           <li>
-            <Link className="item activo" to="/">
+            <Link className="item activo" to="/E-commerce/">
               Inicio
             </Link>
           </li>
           <li>
-            <Link className="item" to="/Nosotros">
+            <Link className="item" to="/E-commerce/Nosotros">
               Nosotros
             </Link>
           </li>
           <li>
            <div className="li flex items-center justify-between duration-500">
-           <Link to={"/Productos"}>
+           <Link to={"/E-commerce/Productos"}>
               Productos
             </Link>
             <i className="fa-solid fa-chevron-down" onClick={upDrop}></i>
@@ -95,7 +95,7 @@ function HeaderR() {
                 <li className="p-2" key={Categorias.id}>
                   <Link
                     className=""
-                    to="/VistaProductos"
+                    to="/E-commerce/VistaProductos"
                     onClick={() => {
                       setCategoriaId(Categorias.id);
                     }}
@@ -107,7 +107,7 @@ function HeaderR() {
             </ul>
           </li>
           <li>
-            <Link className="item" to="/Contactenos">
+            <Link className="item" to="/E-commerce/Contactenos">
               Contáctenos
             </Link>
           </li>

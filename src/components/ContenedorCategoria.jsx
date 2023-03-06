@@ -17,7 +17,7 @@ function ContenedorCategoria({ Nombre, Productos, Id }){
                     })
                 }
             </div>
-           <Link to={"/VistaProductos"}><button onClick={()=>{setCategoriaId(Id)}} className="BTNVermas">Ver Mas</button></Link> 
+           <Link to={"/E-commerce/VistaProductos"}><button onClick={()=>{setCategoriaId(Id)}} className="BTNVermas">Ver Mas</button></Link> 
         </div>
     );
 }
