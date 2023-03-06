@@ -42,7 +42,7 @@ export function TagContexto(props) {
     //     nav.classList.remove("fixed");
     //   }
     // };
-    console.log(" ")
+    console.log("no")
   };
   useEffect(() => {
     setDato(Categorias);
